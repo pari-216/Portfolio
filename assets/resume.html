@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pari Garg — Resume</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Quicksand:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --lavender: #6d558f;
+      --text: #5a4d6a;
+      --muted: #8a7a9a;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Quicksand", sans-serif;
+      color: var(--text);
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: #fffcfa;
+    }
+    h1 {
+      font-family: "Cormorant Garamond", serif;
+      font-size: 2.25rem;
+      color: var(--lavender);
+    }
+    h2 {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--lavender);
+      margin: 1.5rem 0 0.5rem;
+      border-bottom: 2px solid #ede4f8;
+      padding-bottom: 0.25rem;
+    }
+    .subtitle { color: var(--muted); margin-bottom: 1rem; }
+    .contact { font-size: 0.9rem; margin-bottom: 1.5rem; }
+    .contact a { color: var(--lavender); }
+    ul { margin-left: 1.25rem; margin-bottom: 0.75rem; }
+    li { margin-bottom: 0.35rem; font-size: 0.95rem; }
+    .entry { margin-bottom: 1rem; }
+    .entry strong { display: block; }
+    .entry span { font-size: 0.85rem; color: var(--muted); }
+    .badge {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 0.15rem 0.55rem;
+      margin-bottom: 0.35rem;
+      background: #ede4f8;
+      color: var(--lavender);
+      border-radius: 50px;
+    }
+    .skills { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+    .skills span {
+      font-size: 0.8rem;
+      padding: 0.2rem 0.6rem;
+      background: #ede4f8;
+      border-radius: 50px;
+      color: var(--lavender);
+    }
+    @media print {
+      body { margin: 0; padding: 1.5rem; }
+      .no-print { display: none; }
+    }
+    .print-btn {
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      padding: 0.6rem 1.2rem;
+      background: linear-gradient(135deg, #9b7ec8, #c4a8e8);
+      color: white;
+      border: none;
+      border-radius: 50px;
+      font-family: inherit;
+      font-weight: 600;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <button class="print-btn no-print" onclick="window.print()">Save as PDF</button>
+
+  <h1>Pari Garg</h1>
+  <p class="subtitle">First-Year Computer Science Engineering Student · Frontend &amp; Android Developer</p>
+  <p class="contact">
+    <a href="https://github.com/pari-216">github.com/pari-216</a> ·
+    <a href="https://www.linkedin.com/in/pari-garg-675a1437a/">LinkedIn</a>
+  </p>
+
+  <h2>Summary</h2>
+  <p>
+    Motivated CSE student at IGDTUW with hands-on experience in frontend and Android development.
+    Passionate about building creative, user-friendly applications with clean UI and strong problem-solving skills.
+  </p>
+
+  <h2>Education</h2>
+  <div class="entry">
+    <strong>B.Tech — Computer Science Engineering</strong>
+    <span>Indira Gandhi Delhi Technological University for Women (IGDTUW) · 2025 – Present</span>
+    <ul>
+      <li>SGPA Semester 1: 7.95 / 10</li>
+    </ul>
+  </div>
+  <div class="entry">
+    <strong>Class XII — 90%</strong>
+    <strong>Class X — 91%</strong>
+  </div>
+
+  <h2>Skills</h2>
+  <div class="skills">
+    <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Kotlin</span>
+    <span>Android Studio</span><span>Jetpack Compose</span><span>C++</span>
+    <span>DSA</span><span>Git &amp; GitHub</span>
+  </div>
+
+  <h2>Projects</h2>
+  <div class="entry">
+    <strong>Aurora Weather App</strong>
+    <span>HTML · JavaScript · CSS</span>
+    <ul><li>Weather app with location-based forecasts and polished UI.</li></ul>
+  </div>
+  <div class="entry">
+    <strong>To-Do List App</strong>
+    <span>HTML · CSS · JavaScript</span>
+    <ul><li>Task manager with add, edit, delete, and local persistence.</li></ul>
+  </div>
+  <div class="entry">
+    <strong>TaskMatrix</strong>
+    <span>Android Studio · Kotlin</span>
+    <ul><li>Eisenhower-matrix task organizer for priority-based planning.</li></ul>
+  </div>
+
+  <h2>Achievements</h2>
+  <div class="entry">
+    <span class="badge">Top 10 / 50 Teams</span>
+    <strong>Ideathon — Enactus NSUT</strong>
+    <ul>
+      <li>Secured among Top 10 teams out of 50 for developing an AI-based solution to predict pharmaceutical tablet quality.</li>
+    </ul>
+  </div>
+  <div class="entry">
+    <span class="badge">Top 100 / 250 Teams</span>
+    <strong>Makeathon 8 — Thapar University (Microsoft Student Ambassadors)</strong>
+    <ul>
+      <li>Ranked among Top 100 teams out of 250 for building an AI-based nurse shift handoff system.</li>
+    </ul>
+  </div>
+
+  <h2>Interests</h2>
+  <p>Frontend development, Android development, UI/UX design, problem solving, and creative app building.</p>
+</body>
+</html>

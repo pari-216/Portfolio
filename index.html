@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Pari Garg — First-year CSE student passionate about frontend, Android, and creative UI." />
+  <title>Pari Garg | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Quicksand:wght@400;500;600;700&family=Sacramento&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Loading Screen -->
+  <div id="loader" class="loader" aria-hidden="true">
+    <div class="loader-inner">
+      <div class="loader-flower" aria-hidden="true">✿</div>
+      <div class="loader-text">blooming...</div>
+      <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+    </div>
+  </div>
+
+  <!-- Cursor Glow -->
+  <div id="cursor-glow" class="cursor-glow" aria-hidden="true"></div>
+
+  <!-- Floating Decorations -->
+  <div class="decor-layer" aria-hidden="true">
+    <div class="sun-rays"></div>
+    <div class="petals-container" id="petals"></div>
+    <div class="particles-container" id="particles"></div>
+    <div class="float-decor">
+      <span class="float-item cloud cloud-1">☁</span>
+      <span class="float-item cloud cloud-2">☁</span>
+      <span class="float-item star star-1">✦</span>
+      <span class="float-item star star-2">✧</span>
+      <span class="float-item star star-3">★</span>
+      <span class="float-item sparkle sparkle-1">✨</span>
+      <span class="float-item sparkle sparkle-2">✨</span>
+      <span class="float-item flower-decor f1">🌸</span>
+      <span class="float-item flower-decor f2">💜</span>
+      <span class="float-item flower-decor f3">🪻</span>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#hero" class="nav-logo">Pari<span class="logo-dot">.</span></a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#achievements" class="nav-link">Achievements</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#resume" class="nav-link">Resume</a></li>
+        <li><a href="#contact" class="nav-link nav-cta">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero section" id="hero">
+      <div class="hero-glow"></div>
+      <div class="hero-sunshine"></div>
+      <div class="container hero-content reveal">
+        <div class="hero-badge">✿ first-year CSE · IGDTUW</div>
+        <h1 class="hero-title">
+          Hi, I'm <span class="hero-name">Pari Garg</span>
+        </h1>
+        <p class="hero-tagline">
+          Crafting <em>dreamy interfaces</em> &amp; delightful apps — frontend developer,
+          creative builder, and sunshine enthusiast.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">
+            <span>Explore My Work</span>
+            <span class="btn-shine"></span>
+          </a>
+          <a href="#contact" class="btn btn-ghost">Say Hello ✿</a>
+        </div>
+        <div class="hero-scroll">
+          <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+            <span class="scroll-dot"></span>
+          </a>
+        </div>
+      </div>
+      <div class="hero-floral" aria-hidden="true">
+        <svg class="lavender-svg" viewBox="0 0 120 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <ellipse cx="60" cy="40" rx="8" ry="12" fill="#c4a8e8" opacity="0.7"/>
+          <ellipse cx="45" cy="55" rx="7" ry="11" fill="#b89adf" opacity="0.6"/>
+          <ellipse cx="75" cy="55" rx="7" ry="11" fill="#d4b8f0" opacity="0.6"/>
+          <ellipse cx="52" cy="70" rx="6" ry="10" fill="#a88cd4" opacity="0.5"/>
+          <ellipse cx="68" cy="70" rx="6" ry="10" fill="#c9b0e8" opacity="0.5"/>
+          <rect x="57" y="80" width="6" height="120" rx="3" fill="#8fbc8f" opacity="0.6"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="about section" id="about">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">✿ about me</span>
+          <h2 class="section-title">A little <span class="text-gradient">sunshine</span> story</h2>
+        </div>
+        <div class="about-grid reveal">
+          <div class="about-card glass-card">
+            <div class="about-icon">🌷</div>
+            <p>
+              I'm a <strong>first-year Computer Science student</strong> at
+              <strong>Indira Gandhi Delhi Technological University for Women (IGDTUW)</strong>,
+              learning to turn ideas into warm, user-friendly digital experiences.
+            </p>
+          </div>
+          <div class="about-card glass-card">
+            <div class="about-icon">💜</div>
+            <p>
+              I'm drawn to <strong>frontend development</strong>, <strong>Android development</strong>,
+              <strong>UI designing</strong>, and <strong>problem solving</strong> — blending logic with
+              creativity to build apps people love to use.
+            </p>
+          </div>
+          <div class="about-card glass-card">
+            <div class="about-icon">✨</div>
+            <p>
+              I love exploring new technologies and crafting visually appealing interfaces.
+              Every project is a chance to learn, grow, and sprinkle a little more beauty into the web.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="skills section" id="skills">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">✿ my toolkit</span>
+          <h2 class="section-title">Skills &amp; <span class="text-gradient">strengths</span></h2>
+        </div>
+        <div class="skills-grid reveal" id="skills-grid"></div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects section" id="projects">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">✿ creations</span>
+          <h2 class="section-title">Featured <span class="text-gradient">projects</span></h2>
+        </div>
+        <div class="projects-grid reveal" id="projects-grid"></div>
+      </div>
+    </section>
+
+    <!-- Achievements -->
+    <section class="achievements section" id="achievements">
+      <div class="achievements-decor" aria-hidden="true">
+        <span class="ach-decor ach-star-1">✦</span>
+        <span class="ach-decor ach-star-2">★</span>
+        <span class="ach-decor ach-star-3">✧</span>
+        <span class="ach-decor ach-flower-1">🌸</span>
+        <span class="ach-decor ach-flower-2">🪻</span>
+        <span class="ach-decor ach-sparkle">✨</span>
+      </div>
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">✿ milestones</span>
+          <h2 class="section-title">Achievements <span class="text-gradient">&amp; wins</span></h2>
+        </div>
+        <div class="achievements-timeline reveal" id="achievements-timeline"></div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section class="education section" id="education">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">✿ journey</span>
+          <h2 class="section-title">Education <span class="text-gradient">timeline</span></h2>
+        </div>
+        <div class="timeline reveal" id="education-timeline"></div>
+      </div>
+    </section>
+
+
+    <!-- Resume -->
+    <section class="resume section" id="resume">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">✿ professional</span>
+          <h2 class="section-title">Resume <span class="text-gradient">&amp; summary</span></h2>
+        </div>
+        <div class="resume-card glass-card reveal">
+          <div class="resume-content">
+            <h3>Professional Summary</h3>
+            <p>
+              Motivated first-year Computer Science Engineering student with hands-on experience
+              in frontend and Android development. Skilled in building responsive UIs, mobile apps
+              with Kotlin &amp; Jetpack Compose, and solving problems with strong DSA fundamentals.
+              Eager to contribute creative, user-centered solutions as an intern or collaborator.
+            </p>
+            <ul class="resume-highlights">
+              <li>Frontend &amp; UI-focused development</li>
+              <li>Android apps with Kotlin &amp; Compose</li>
+              <li>Clean code practices with Git &amp; GitHub</li>
+            </ul>
+          </div>
+          <div class="resume-actions">
+            <a href="assets/resume.html" class="btn btn-primary" target="_blank" rel="noopener">
+              View Resume
+            </a>
+            <button type="button" class="btn btn-ghost" id="print-resume">
+              Download / Print PDF
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">✿ let's connect</span>
+          <h2 class="section-title">Get in <span class="text-gradient">touch</span></h2>
+        </div>
+        <div class="contact-grid reveal">
+          <div class="contact-info">
+            <a href="#contact" class="contact-link glass-card" id="email-link">
+              <span class="contact-icon">✉</span>
+              <span>
+                <small>Email</small>
+                <span id="email-display">Send me a message</span>
+              </span>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/pari-garg-675a1437a/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="contact-link glass-card"
+            >
+              <span class="contact-icon">in</span>
+              <span>
+                <small>LinkedIn</small>
+                Pari Garg
+              </span>
+            </a>
+            <a
+              href="https://github.com/pari-216"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="contact-link glass-card"
+            >
+              <span class="contact-icon">⌘</span>
+              <span>
+                <small>GitHub</small>
+                @pari-216
+              </span>
+            </a>
+          </div>
+          <form class="contact-form glass-card" id="contact-form" novalidate>
+            <div class="form-group">
+              <input type="text" id="name" name="name" required autocomplete="name" />
+              <label for="name">Your Name</label>
+              <span class="form-line"></span>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" name="email" required autocomplete="email" />
+              <label for="email">Your Email</label>
+              <span class="form-line"></span>
+            </div>
+            <div class="form-group">
+              <textarea id="message" name="message" rows="4" required></textarea>
+              <label for="message">Your Message</label>
+              <span class="form-line"></span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <span>Send Message</span>
+              <span class="btn-shine"></span>
+            </button>
+            <p class="form-status" id="form-status" role="status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="footer-quote">
+        "Grow through what you go through — keep blooming, keep building."
+      </p>
+      <p class="footer-copy">
+        Made with <span class="heart">💜</span> by Pari Garg · <span id="year"></span>
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
