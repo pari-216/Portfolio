@@ -265,12 +265,12 @@
           </div>
           <form class="contact-form glass-card" id="contact-form" novalidate>
             <div class="form-group">
-              <input type="text" id="name" name="name" required autocomplete="name" />
+              <input type="text" id="name" name="from_name" required autocomplete="name" />
               <label for="name">Your Name</label>
               <span class="form-line"></span>
             </div>
             <div class="form-group">
-              <input type="email" id="email" name="email" required autocomplete="email" />
+              <input type="email" id="email" name="from_email" required autocomplete="email" />
               <label for="email">Your Email</label>
               <span class="form-line"></span>
             </div>
@@ -303,5 +303,6 @@
   </footer>
 
   <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </body>
 </html>
