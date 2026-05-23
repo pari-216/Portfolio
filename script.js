@@ -401,37 +401,37 @@
   function initContactForm() {
     const form = document.getElementById("contact-form");
     const status = document.getElementById("form-status");
+
     if (!form) return;
 
-    form.addEventListener("submit", (e) => {
+    // Initialize EmailJS
+    emailjs.init("1W0lnjeZyWAs_Vrjr");
+
+    form.addEventListener("submit", function (e) {
       e.preventDefault();
-      const name = form.name.value.trim();
-      const email = form.email.value.trim();
-      const message = form.message.value.trim();
 
-      if (!name || !email || !message) {
-        showStatus("Please fill in all fields.", "error");
-        return;
-      }
-
-      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-        showStatus("Please enter a valid email.", "error");
-        return;
-      }
-
-      const subject = encodeURIComponent(`Portfolio Contact from ${name}`);
-      const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`);
-      const mailto = `mailto:${CONFIG.email}?subject=${subject}&body=${body}`;
-
-      window.location.href = mailto;
-      showStatus("Opening your email app… ✿", "success");
-      form.reset();
+      emailjs
+        .sendForm(
+          "service_3cy1jfq",
+          "template_8ecu30w",
+          form
+        )
+        .then(() => {
+          showStatus("Message sent successfully! ✨", "success");
+          form.reset();
+        })
+        .catch((error) => {
+          console.log(error);
+          showStatus("Failed to send message. Try again later.", "error");
+        });
     });
 
     function showStatus(msg, type) {
       if (!status) return;
+
       status.textContent = msg;
       status.className = `form-status ${type}`;
+
       setTimeout(() => {
         status.textContent = "";
         status.className = "form-status";
