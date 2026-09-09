@@ -45,7 +45,7 @@
         "Developed an AI-powered smart travel planning platform featuring AI itinerary generation, budget and expense tracking, hotel suggestions, packing checklists, travel journals, and an AI travel assistant. Built with secure authentication and backend modular AI services.",
       tags: ["React", "Node.js", "Generative AI", "MongoDB"],
       github: "https://github.com/pari-216/TravelMindAI",
-      demo: null,
+      demo: "https://travelmindai-nine.vercel.app/",
       period: "06/2026 – 07/2026"
     },
     {
@@ -55,38 +55,8 @@
         "AI-powered platform to analyze creator and audience data to support informed campaign decisions before launch. Integrated social media data and AI analysis to generate actionable insights. Selected among Top 40 Finalists at Hackfluence 2026 (Team Vibecoders).",
       tags: ["Next.js", "TypeScript", "Generative AI", "Apify API"],
       github: "https://github.com/pari-216/AudienceLens",
-      demo: null,
+      demo: "https://audiencelens-fawn.vercel.app/",
       period: "06/2026 – 06/2026"
-    },
-    {
-      title: "PingD — Operational Inbox",
-      emoji: "📥",
-      description:
-        "AI-powered operational inbox built during AutomateIndia HackDriven at Microsoft Office, Noida. Secured a top 12 position in the Notion Track.",
-      tags: ["Generative AI", "Node.js", "React", "Notion API"],
-      github: "https://github.com/pari-216",
-      demo: null,
-      period: "2026"
-    },
-    {
-      title: "Aurora Weather App",
-      emoji: "🌤️",
-      description:
-        "A beautiful weather application with clean UI, location-based forecasts, and smooth animations for a delightful user experience.",
-      tags: ["Kotlin", "Android", "Jetpack Compose", "API"],
-      github: "https://github.com/pari-216/Aurora-Weather",
-      demo: "https://aurora-weather-rosy.vercel.app/",
-      period: "2025"
-    },
-    {
-      title: "To-Do List App",
-      emoji: "📝",
-      description:
-        "A minimalist task manager with add, edit, delete, and local persistence — designed for clarity and everyday productivity.",
-      tags: ["HTML", "CSS", "JavaScript"],
-      github: "https://github.com/pari-216/To-Do-List",
-      demo: "https://to-do-list-iota-ivory.vercel.app/",
-      period: "2025"
     }
   ];
 
